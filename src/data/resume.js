@@ -1,4 +1,4 @@
-const studies = [
+export const studies = [
   {
     id: 1,
     title: "Ingeniería en Informática",
@@ -13,7 +13,7 @@ const studies = [
   },
 ];
 
-const experiences = [
+export const experiences = [
   {
     id: 1,
     title: "Desarrollador Frontend",
@@ -27,5 +27,3 @@ const experiences = [
     date: "2019 - 2021",
   },
 ];
-
-export { studies, experiences };
