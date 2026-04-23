@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -109,3 +111,13 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+
+/* .navbar ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 20px;
+  list-style: none;
+} */
