@@ -11,9 +11,11 @@ const Home = () => {
         <h2>Proyectos</h2>
         <ul>
           {projects.map((project) => {
-            <li key={project.id}>
-              <Link to={`/project/${project.id}`}>{project.name}</Link>
-            </li>;
+            return (
+              <li key={project.id}>
+                <Link to={`/project/${project.id}`}>{project.name}</Link>
+              </li>
+            );
           })}
         </ul>
       </section>
@@ -22,10 +24,12 @@ const Home = () => {
         <h2>Resumen profesional</h2>
         <ul>
           {resume.map((item) => {
-            <li key={item.id}>
-              <strong>{item.title}:</strong>
-              {item.detail}
-            </li>;
+            return (
+              <li key={item.id}>
+                <strong>{item.title}:</strong>
+                {item.detail}
+              </li>
+            );
           })}
         </ul>
       </section>
