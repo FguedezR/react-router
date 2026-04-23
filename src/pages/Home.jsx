@@ -17,6 +17,18 @@ const Home = () => {
           })}
         </ul>
       </section>
+
+      <section>
+        <h2>Resumen profesional</h2>
+        <ul>
+          {resume.map((item) => {
+            <li key={item.id}>
+              <strong>{item.title}:</strong>
+              {item.detail}
+            </li>;
+          })}
+        </ul>
+      </section>
     </div>
   );
 };
