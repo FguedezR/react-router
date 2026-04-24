@@ -4,7 +4,7 @@ import { studies, experiences } from "../data/resume";
 
 const Home = () => {
   return (
-    <div className="home-container">
+    <div>
       <h1>Mi porfolio</h1>
 
       <section>

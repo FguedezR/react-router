@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Navbar />
-      <main className="max-w-4xl mx-auto p-8">
+      <main className="max-w-4xl mx-auto p-2">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -21,4 +21,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
