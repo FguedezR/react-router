@@ -26,6 +26,23 @@ const Projects = () => {
               <p className="text-gray-600 text-sm mb-4 line-clamp-2">
                 {project.description}
               </p>
+              <div className="flex justify-between items-center">
+                {/* link ruta dinamica detalles */}
+                <Link
+                  to={`/project/${project.id}`}
+                  className="text-blue-600 font-medium hover:text-blue-800 transition-colors"
+                >
+                  Ver detalles →
+                </Link>
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gray-100 px-3 py-1 rounded text-xs text-gray-500 hover:bg-gray-200"
+                >
+                  Demo
+                </a>
+              </div>
             </div>
           </article>
         ))}
@@ -33,3 +50,5 @@ const Projects = () => {
     </div>
   );
 };
+
+export default Projects;
