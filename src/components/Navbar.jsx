@@ -30,6 +30,18 @@ const Navbar = () => {
         </li>
         <li>
           <Link
+            to="/projects"
+            className={({ isActive }) =>
+              isActive
+                ? "text-blue-400 font-bold"
+                : "hover:text-blue-300 transition"
+            }
+          >
+            Projects
+          </Link>
+        </li>
+        <li>
+          <Link
             to="/contact"
             className={({ isActive }) =>
               isActive
